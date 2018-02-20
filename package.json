@@ -1,0 +1,27 @@
+{
+  "name": "index",
+  "version": "0.0.1",
+  "description": "Test building ES6 app with ParcelJS",
+  "main": "./src/index.html",
+  "repository": "https://github.com/OleksiyRudenko/test-parcel-es6.git",
+  "author": "Oleksiy Rudenko <oleksiy.rudenko@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel ./src/index.html --public-url ./",
+    "watch": "parcel watch ./src/index.html --public-url ./",
+    "prebuild-dev": "node build.prebuild.js",
+    "build-dev": "parcel build ./src/index.html --no-minify --public-url ./",
+    "prebuild": "node build.prebuild.js",
+    "build": "parcel build ./src/index.html --public-url ./"
+  },
+  "devDependencies": {
+    "autoprefixer": "^8.0.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "fs-extra": "^5.0.0",
+    "postcss-modules": "^1.1.0"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0"
+  }
+}
